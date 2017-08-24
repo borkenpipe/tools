@@ -1,3 +1,0 @@
-[console_scripts]
-baudrate = baudrate.command_line:main
-
