@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: baudrate
+Version: 0.1dev-r0
+Summary: Find baudrate of tty device
+Home-page: https://github.com/devttys0/baudrate
+Author: devttys0
+Author-email: devttys0@github.com
+License: The MIT License (MIT)
+Description: UNKNOWN
+Keywords: util debug
+Platform: UNKNOWN
