@@ -15,6 +15,9 @@ setup(name='borkenutil',
       url='borkenpipe.io',
       license='FreeBSD license',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
+      test_suite='nose.collector',
+      tests_require=['nose'],
+
       include_package_data=True,
       zip_safe=False,
       install_requires=[

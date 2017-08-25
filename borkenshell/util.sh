@@ -1,0 +1,2 @@
+
+. $HOME/bin/ifs.sh
