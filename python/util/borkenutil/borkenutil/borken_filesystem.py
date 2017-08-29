@@ -1,4 +1,5 @@
 import sys
+import stat
 import os
 
 DEFAULTRUNNOW=True
@@ -49,4 +50,23 @@ class BorkenDirectory():
 
     def __str__(self):
         return self.path
+
+def file_effectively_readable(path):
+    file_exists(path)
+    uid = os.getuid()
+    euid = os.geteuid()
+    gid = os.getgid()
+    egid = os.getegid()
+    return os.access(path, os.R_OK)
+def file_readable(path):
+    file_exists(path)
+    return os.access(path, os.R_OK)
+
+def file_exists(path):
+    return os.path.exists(path)
+class FileNotFoundError(OSError):
+    pass
+
+def file_not_exists(path):
+    return not file_exists(path)
 

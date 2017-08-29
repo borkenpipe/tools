@@ -1,19 +1,19 @@
 from borken_exit import *
-from . import borken_logger
+from borken_logger import *
 
 def fail_if_none_or_empty(s, msg=None):
     if _none_or_empty(s):
-        borken_logger.fail(msg)
+        fail(msg)
         exit_plan("exitonfail")
 
 def fail_if_value(lhs, rhs, msg=None, exception=None):
     if is_value(lhs , rhs):
-        borken_logger.fail(msg)
+        fail(msg)
         exit_plan("exitonfail", exception=exception)
 
 def warn_if_none_or_empty(s, msg=None):
     if _none_or_empty(s):
-        borken_logger.warn(msg)
+        warn(msg)
         exit_plan("exitonwarn")
 
 def none_or_empty(s):

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""This module standard consol logging"""
+"""This module standard console logging"""
 
 import colored
 from colored import stylize

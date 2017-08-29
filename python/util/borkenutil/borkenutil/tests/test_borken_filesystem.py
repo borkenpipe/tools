@@ -1,9 +1,7 @@
 from unittest import TestCase
 
-from borkenutil import *
+from borkenutil import borken_logger
 
 class TestBorken(TestCase):
-    def test_is_string(self):
-        s ="SDF"
-        self.assertTrue(isinstance(s, basestring))
-        self.assertTrue(False != True)
+	def test_info(self):
+            borken_logger.info("INFO")
